@@ -1,0 +1,58 @@
+
+    <header class="header">
+        <a href="#" class="brand">PUJA JEWELLERS</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="#">Transactions</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="time-filter">
+                <button class="filter-btn active">Today</button>
+                <button class="filter-btn">Week</button>
+                <button class="filter-btn">Month</button>
+                <button class="filter-btn">Year</button>
+                <button class="filter-btn">All</button>
+                <button class="filter-btn" id="customBtn" (click)="customBtn()">Custom</button>
+            </div>
+
+            <div class="transaction-list">
+                <div class="transaction-item gold">
+                    <span>1.</span>
+                    <span>02/02/2025</span>
+                    <span>Gold</span>
+                    <span>23.90</span>
+                </div>
+                <div class="transaction-item cash">
+                    <span>2.</span>
+                    <span>02/02/2025</span>
+                    <span>Cash</span>
+                    <span>23,900</span>
+                </div>
+                <!-- More transaction items can be added here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="dateModal" #dateModal>
+       <div class="modal-content">
+            <div>
+                <label>Start Date</label>
+                <input type="date" class="date-input">
+            </div>
+            <div>
+                <label>End Date</label>
+                <input type="date" class="date-input">
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn cancel" (click) ="closeModal()">Cancel</button>
+                <button class="modal-btn search">Search</button>
+            </div>
+        </div>
+    </div>
+
+    
